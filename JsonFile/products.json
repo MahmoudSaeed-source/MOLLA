@@ -1,0 +1,197 @@
+[
+    {
+        "id":"1",
+        "modle":"Long FitT Shirt",
+        "name":"Long Fit T-Shirt",
+        "price":"€6.99 €9.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product1/1.webp"
+            }
+        ]
+    },
+    {
+        "id":"2",
+        "modle":"Premium Cotton T-Shirt",
+        "name":"Premium Cotton T-Shirt",
+        "price":"€6.99 €9.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product2/1.webp"
+            },
+            {
+                "src2":".././images/productes/product2/2.webp"
+            },
+            {
+                "src3":".././images/productes/product2/3.webp"
+            },
+            {
+                "src4":".././images/productes/product2/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"3",
+        "modle":"Striped Shirt",
+        "name":"Striped Shirt",
+        "price":"€6.99 €9.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product3/1.webp"
+            },
+            {
+                "src2":".././images/productes/product3/2.webp"
+            }
+        ]
+    },
+    {
+        "id":"4",
+        "modle":"Cotton T-Shirt",
+        "name":"Cotton T-Shirt",
+        "price":"€6.99 €9.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product4/1.webp"
+            },
+            {
+                "src2":".././images/productes/product4/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product4/3.webp"
+            },
+            {
+                "src2":".././images/productes/product4/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"5",
+        "modle":"Long Hooded T-Shirt",
+        "name":"Long Hooded T-Shirt",
+        "price":"€17.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product5/1.webp"
+            },
+            {
+                "src2":".././images/productes/product5/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product5/3.webp"
+            },
+            {
+                "src2":".././images/productes/product5/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"6",
+        "modle":"Printed Cotton Shirt",
+        "name":"Printed Cotton Shirt",
+        "price":"€12.99 €17.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product6/1.webp"
+            },
+            {
+                "src2":".././images/productes/product6/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product6/3.webp"
+            },
+            {
+                "src2":".././images/productes/product6/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"7",
+        "modle":"Printed Cotton Shirt",
+        "name":"Printed Cotton Shirt",
+        "price":"€12.99 €17.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product6/1.webp"
+            },
+            {
+                "src2":".././images/productes/product6/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product6/3.webp"
+            },
+            {
+                "src2":".././images/productes/product6/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"8",
+        "modle":"Printed Cotton Shirt",
+        "name":"Printed Cotton Shirt",
+        "price":"€12.99 €17.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product6/1.webp"
+            },
+            {
+                "src2":".././images/productes/product6/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product6/3.webp"
+            },
+            {
+                "src2":".././images/productes/product6/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"9",
+        "modle":"Printed Cotton Shirt",
+        "name":"Printed Cotton Shirt",
+        "price":"€12.99 €17.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product6/1.webp"
+            },
+            {
+                "src2":".././images/productes/product6/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product6/3.webp"
+            },
+            {
+                "src2":".././images/productes/product6/4.webp"
+            }
+        ]
+    },
+    {
+        "id":"10",
+        "modle":"Printed Cotton Shirt",
+        "name":"Printed Cotton Shirt",
+        "price":"€12.99 €17.99",
+        "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+        "src":[
+            {
+                "src1":".././images/productes/product6/1.webp"
+            },
+            {
+                "src2":".././images/productes/product6/2.jpg"
+            },
+            {
+                "src2":".././images/productes/product6/3.webp"
+            },
+            {
+                "src2":".././images/productes/product6/4.webp"
+            }
+        ]
+    }
+]
