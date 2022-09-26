@@ -15,13 +15,37 @@ nav {
         @extend %flex_between;
     }
     .phon{
+      cursor: pointer;
+      &:hover {
+          color: $color-primary;
+        }
         svg{
             margin-right: 10px;
+           
         }
     }
     .links_contact{
         @extend %flex_end;
-      
+        .login{
+          svg{
+            margin-right: 10px;
+            cursor:pointer;
+            &:hover{
+              color:$color-primary;
+            }
+          }
+        }
+        .social_icon{
+          @extend %flex_end;
+          svg {
+              margin-right: 30px;
+              cursor:pointer;
+              &:hover {
+                color: $color-primary;
+              }
+            }
+        }
+        
     }
   }
   .header_nave {
@@ -77,4 +101,137 @@ nav {
      
     }
   }
-}
+  .nav_bottom{
+    @extend %flex_center;
+    margin-bottom: 0;
+    height: 65px;
+    border-top:1px solid #ddd;
+    .links_nav_botton{
+      @extend %flex_between;
+      height: 100%;
+     .links{
+      display: flex;
+      list-style: none;
+      margin-bottom: 0;
+      height:100%;
+      position: relative;
+      .link{
+        margin-right: 20px;
+        font-family: $body-font;
+        font-weight: 600;
+        font-size: 15px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: start;
+        cursor:pointer;
+        position: relative;
+        &:hover::after{
+          content: "";
+          width: 100%;
+          height: 1px;
+          border-top: 1px solid $color-primary;
+          position: absolute;
+          top: -1px;
+          left: 0;
+        }
+        svg{
+          margin-left: 10px;
+        }
+      }
+      .insid{
+        padding: 20px;
+        position: absolute;
+        height: 400px;
+        width: 1100px;
+        overflow-y: hidden;
+        flex-wrap: wrap;
+        top:50px;
+        left:0;
+        color:#000;
+        display: flex;
+        &:hover{
+          overflow-y: scroll;
+        }
+        .groub_one_links{
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          align-items: start;
+          flex-direction: column;
+          height:100%;
+          flex-wrap: nowrap;
+          .title {
+              font-size: 14px;
+              font-weight: 600;
+              font-family: $body-font;
+          
+              &:hover {
+                color: $color-primary;
+              }
+            }
+          .links_groub_one{
+            list-style: none;
+          height: 700px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+            li{
+              margin-bottom: 7px;
+            }
+            a{
+              text-decoration: none;
+              color:#777;
+              font-family: $body-font;
+              font-size: 15px;
+              font-weight: 400;
+              span{
+                margin-left: 20px;
+                background-color:#ffc107;
+                color:#fff;
+                font-size: 10px;
+                padding: 1px;
+                border-radius: 4px;
+              }
+              &:hover{
+                color:$color-primary;
+              }
+            }
+          }
+          }
+          .groub_tow_links{
+            @extend .groub_one_links;
+            .title{
+              font-size: 14px;
+              font-weight: 600;
+              font-family: $body-font;
+              &:hover{
+                color:$color-primary;
+              }
+            }
+            .links_groub_two{
+              @extend .links_groub_one;
+            }
+          }
+          
+        }
+      }
+     }
+     
+    }
+        .offer_text {
+          @extend %flex_center;
+    svg{
+      margin-right: 10px;
+      color:$color-primary;
+    }
+          .text_offer {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+  }
+
