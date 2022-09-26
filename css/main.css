@@ -10930,6 +10930,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+nav .header_nave .v_icon_shop .favorite .top-icon, nav .header_nave .v_icon_shop .shoping .top-icon, nav .header_nave .v_icon_shop .favorite, nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .header_nave .v_icon_shop, nav .header_nave, nav .nav_contact .container, nav .nav_contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav_contact .links_contact {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10939,4 +10957,68 @@ textarea.form-control-lg {
 body {
   font-family: "Poppins", sans-seri;
   color: #000;
+}
+
+nav {
+  width: 100%;
+  height: 200px;
+}
+nav .nav_contact {
+  width: 100%;
+  height: 17%;
+  padding: 10px 20px;
+  background-color: #000;
+  color: rgb(177, 174, 174);
+  font-size: 14px;
+}
+nav .nav_contact .container {
+  width: 100%;
+}
+nav .nav_contact .phon svg {
+  margin-right: 10px;
+}
+nav .header_nave {
+  height: 100%;
+  padding: 30px 0px;
+  width: 100%;
+}
+nav .header_nave .search_box {
+  height: 100%;
+}
+nav .header_nave .search_box input {
+  border: none;
+  outline: none;
+}
+nav .header_nave .logo {
+  height: 100%;
+}
+nav .header_nave .v_icon_shop {
+  width: 100%;
+  height: 100%;
+  height: 100%;
+}
+nav .header_nave .v_icon_shop span {
+  font-size: 0.8rem;
+  color: #000;
+  font-family: "Poppins", sans-seri;
+}
+nav .header_nave .v_icon_shop .favorite, nav .header_nave .v_icon_shop .shoping {
+  margin-right: 10px;
+  position: relative;
+  height: 100%;
+}
+nav .header_nave .v_icon_shop .favorite .top-icon, nav .header_nave .v_icon_shop .shoping .top-icon {
+  position: absolute;
+  top: -10px;
+  left: 60px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #cc9966;
+}
+nav .header_nave .v_icon_shop .favorite svg, nav .header_nave .v_icon_shop .shoping svg {
+  margin-right: 20px;
+  font-size: 25px;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
