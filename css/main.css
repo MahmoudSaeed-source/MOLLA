@@ -10952,6 +10952,7 @@ nav .nav_contact .links_contact .social_icon, nav .nav_contact .links_contact {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11068,8 +11069,15 @@ nav .nav_bottom .links_nav_botton .links .link {
   justify-content: start;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s;
 }
-nav .nav_bottom .links_nav_botton .links .link:hover::after {
+nav .nav_bottom .links_nav_botton .links .link:hover {
+  color: #cc9966;
+}
+nav .nav_bottom .links_nav_botton .links .link:hover > div {
+  display: flex;
+}
+nav .nav_bottom .links_nav_botton .links .link.active::after, nav .nav_bottom .links_nav_botton .links .link:hover::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -11082,7 +11090,7 @@ nav .nav_bottom .links_nav_botton .links .link svg {
   margin-left: 10px;
 }
 nav .nav_bottom .links_nav_botton .links .insid {
-  padding: 20px;
+  padding-top: 20px;
   position: absolute;
   height: 400px;
   width: 1100px;
@@ -11092,9 +11100,20 @@ nav .nav_bottom .links_nav_botton .links .insid {
   left: 0;
   color: #000;
   display: flex;
+  display: none;
+}
+nav .nav_bottom .links_nav_botton .links .insid #new {
+  background-color: #1cc0a0;
+  color: #fff;
+  padding: 3px;
+  font-size: 8px;
+  display: inline-block;
+  text-transform: uppercase;
 }
 nav .nav_bottom .links_nav_botton .links .insid:hover {
   overflow-y: scroll;
+  scrollbar-width: 10px;
+  scroll-behavior: smooth;
 }
 nav .nav_bottom .links_nav_botton .links .insid .groub_one_links, nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links {
   list-style: none;
@@ -11121,7 +11140,7 @@ nav .nav_bottom .links_nav_botton .links .insid .groub_one_links .links_groub_on
   flex-wrap: wrap;
   align-content: space-between;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
 }
 nav .nav_bottom .links_nav_botton .links .insid .groub_one_links .links_groub_one li, nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .links_groub_one li, nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .links_groub_two li {
   margin-bottom: 7px;
@@ -11134,7 +11153,7 @@ nav .nav_bottom .links_nav_botton .links .insid .groub_one_links .links_groub_on
   font-weight: 400;
 }
 nav .nav_bottom .links_nav_botton .links .insid .groub_one_links .links_groub_one a span, nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .links_groub_one a span, nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .links_groub_two a span {
-  margin-left: 20px;
+  margin-left: 10px;
   background-color: #ffc107;
   color: #fff;
   font-size: 10px;
@@ -11149,8 +11168,22 @@ nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .title {
   font-weight: 600;
   font-family: "Poppins", sans-seri;
 }
+nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .title span {
+  background-color: rgb(190, 46, 46);
+  border-radius: 4px;
+  padding: 1px;
+  font-size: 10px;
+  color: #fff;
+  margin-left: 10px;
+}
 nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .title:hover {
   color: #cc9966;
+}
+nav .nav_bottom .links_nav_botton .links .insid .groub_tow_links .links_groub_two .green {
+  background-color: green;
+  font-size: 10px;
+  padding: 2px;
+  margin-left: 10px;
 }
 nav .offer_text svg {
   margin-right: 10px;
