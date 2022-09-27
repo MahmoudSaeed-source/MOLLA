@@ -2,57 +2,55 @@ nav {
   width: 100%;
   height: 200px;
 
-  .nav_contact{
+  .nav_contact {
     width: 100%;
     height: 17%;
     padding: 10px 20px;
     background-color: #000;
     @extend %flex_between;
-    color:rgb(177, 174, 174);
+    color: rgb(177, 174, 174);
     font-size: 14px;
-    .container{
-        width: 100%;
-        @extend %flex_between;
+    .container {
+      width: 100%;
+      @extend %flex_between;
     }
-    .phon{
+    .phon {
       cursor: pointer;
       &:hover {
-          color: $color-primary;
-        }
-        svg{
-            margin-right: 10px;
-           
-        }
+        color: $color-primary;
+      }
+      svg {
+        margin-right: 10px;
+      }
     }
-    .links_contact{
-        @extend %flex_end;
-        .login{
-          svg{
-            margin-right: 10px;
-            cursor:pointer;
-            &:hover{
-              color:$color-primary;
-            }
+    .links_contact {
+      @extend %flex_end;
+      .login {
+        svg {
+          margin-right: 10px;
+          cursor: pointer;
+          &:hover {
+            color: $color-primary;
           }
         }
-        .social_icon{
-          @extend %flex_end;
-          svg {
-              margin-right: 30px;
-              cursor:pointer;
-              &:hover {
-                color: $color-primary;
-              }
-            }
+      }
+      .social_icon {
+        @extend %flex_end;
+        svg {
+          margin-right: 30px;
+          cursor: pointer;
+          &:hover {
+            color: $color-primary;
+          }
         }
-        
+      }
     }
   }
   .header_nave {
     height: 100%;
     padding: 30px 0px;
     @extend %flex_between;
-    
+
     width: 100%;
     .search_box {
       height: 100%;
@@ -70,180 +68,187 @@ nav {
       @extend %flex_between;
       height: 100%;
       height: 100%;
-      span{
-        font-size: .8rem;
-        color:#000;
+      span {
+        font-size: 0.8rem;
+        color: #000;
         font-family: $body-font;
       }
-      .favorite,.shoping{
+      .favorite,
+      .shoping {
         @extend %flex_center;
-            margin-right: 10px;
-            position: relative;
-            height: 100%;
-            .top-icon{
-                position: absolute;
-                top:-10px;
-                left: 60px;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                color: #fff;
-                background-color: $color-primary;
-                @extend %flex_center;
-            }
-            svg {
-                margin-right: 20px;
-                font-size: 25px;
-                position: relative;
-                
-            }
+        margin-right: 10px;
+        position: relative;
+        height: 100%;
+        .top-icon {
+          position: absolute;
+          top: -10px;
+          left: 60px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          color: #fff;
+          background-color: $color-primary;
+          @extend %flex_center;
+        }
+        svg {
+          margin-right: 20px;
+          font-size: 25px;
+          position: relative;
+        }
       }
-     
     }
   }
-  .nav_bottom{
+  .nav_bottom {
     @extend %flex_center;
     margin-bottom: 0;
     height: 65px;
-    border-top:1px solid #ddd;
-    .links_nav_botton{
+    border-top: 1px solid #ddd;
+    position: relative;
+    .links_nav_botton {
       @extend %flex_between;
       height: 100%;
-     .links{
-      display: flex;
-      list-style: none;
-      margin-bottom: 0;
-      height:100%;
-      position: relative;
-      .link{
-        margin-right: 20px;
-        font-family: $body-font;
-        font-weight: 600;
-        font-size: 15px;
+      .links {
         display: flex;
+        list-style: none;
+        margin-bottom: 0;
         height: 100%;
-        align-items: center;
-        justify-content: start;
-        cursor:pointer;
         position: relative;
-        transition: all .3s;
-        &:hover{
-          color:$color-primary;
-        }
-        &:hover>div{
+        .link {
+          margin-right: 20px;
+          font-family: $body-font;
+          font-weight: 600;
+          font-size: 15px;
           display: flex;
-          
+          height: 100%;
+          align-items: center;
+          justify-content: start;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            color: $color-primary;
+          }
+          &:hover > div {
+            display: flex;
+          }
+          svg {
+            margin-left: 10px;
+          }
         }
-        &.active::after,
-        &:hover::after
-        {
-          content: "";
-          width: 100% ;
-          height: 1px;
-          border-top: 1px solid $color-primary;
+        .insid {
+          padding-top: 20px;
           position: absolute;
-          top: -1px;
+          height: 400px;
+          width: 1100px;
+          overflow-y: hidden;
+          flex-wrap: wrap;
+          top: 50px;
           left: 0;
-        }
-        svg{
-          margin-left: 10px;
-        }
-      }
-      .insid{
-        padding-top: 20px;
-        position: absolute;
-        height: 400px;
-        width: 1100px;
-        overflow-y: hidden;
-        flex-wrap: wrap;
-        top:50px;
-        left:0;
-        color:#000;
-        display: flex;
-        display: none;
-        
-        #new{
-          background-color: #1cc0a0;
-          color:#fff;
-          padding: 3px;
-          font-size: 8px;
-          display: inline-block;
-          text-transform: uppercase;
-        }
-        &:hover{
-          overflow-y: scroll;
-          scrollbar-width: 10px;
-          scroll-behavior: smooth;
-        }
-        .groub_one_links{
-          list-style: none;
+          color: #000;
           display: flex;
-          justify-content: flex-start;
-          align-items: start;
-          flex-direction: column;
-          height:100%;
-          flex-wrap: nowrap;
-          .title {
+          display: none;
+          box-shadow: 1px 1px 1px #e3dfdf, -1px -1px 1px #e3dfdf;
+          z-index: 1000;
+
+          .img_link {
+            height: 100%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          #red {
+            background-color: rgb(190, 46, 46);
+            padding: 2px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+          #new {
+            background-color: #1cc0a0;
+            color: #fff;
+            padding: 3px;
+            font-size: 8px;
+            display: inline-block;
+            text-transform: uppercase;
+          }
+          &:hover {
+            overflow-y: scroll;
+            scrollbar-width: 10px;
+            scroll-behavior: smooth;
+          }
+          .groub_one_links {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+            flex-direction: column;
+            height: 100%;
+            flex-wrap: nowrap;
+            .title {
               font-size: 14px;
               font-weight: 600;
               font-family: $body-font;
+              display: flex;
+              align-items: center;
+              justify-content: center;
               &:hover {
                 color: $color-primary;
               }
             }
-          .links_groub_one{
-            list-style: none;
-          height: 700px;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-            flex-direction: column;
-            align-items:start;
-            li{
-              margin-bottom: 7px;
-            }
-            a{
-              text-decoration: none;
-              color:#777;
-              font-family: $body-font;
-              font-size: 15px;
-              font-weight: 400;
-              span{
-                margin-left: 10px;
-                background-color:#ffc107;
-                color:#fff;
-                font-size: 10px;
-                padding: 1px;
-                border-radius: 4px;
+            .links_groub_one {
+              list-style: none;
+              height: 700px;
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              align-content: space-between;
+              flex-direction: column;
+              align-items: start;
+              li {
+                margin-bottom: 7px;
               }
-              &:hover{
-                color:$color-primary;
+              a {
+                text-decoration: none;
+                color: #777;
+                font-family: $body-font;
+                font-size: 15px;
+                font-weight: 400;
+                span {
+                  margin-left: 10px;
+                  background-color: #ffc107;
+                  color: #fff;
+                  font-size: 10px;
+                  padding: 1px;
+                  border-radius: 4px;
+                }
+                &:hover {
+                  color: $color-primary;
+                }
               }
             }
           }
-          }
-          .groub_tow_links{
+          .groub_tow_links {
             @extend .groub_one_links;
-            .title{
+
+            .title {
               font-size: 14px;
               font-weight: 600;
               font-family: $body-font;
-              span{
+              span {
                 background-color: rgb(190, 46, 46);
                 border-radius: 4px;
                 padding: 1px;
                 font-size: 10px;
-                color:#fff;
+                color: #fff;
                 margin-left: 10px;
               }
-              &:hover{
-                color:$color-primary;
+              &:hover {
+                color: $color-primary;
               }
             }
-            .links_groub_two{
+            .links_groub_two {
               @extend .links_groub_one;
-              .green{
+              .green {
                 background-color: green;
                 font-size: 10px;
                 padding: 2px;
@@ -251,22 +256,117 @@ nav {
               }
             }
           }
-          
         }
       }
-     }
-     
-    }
-        .offer_text {
-          @extend %flex_center;
-    svg{
-      margin-right: 10px;
-      color:$color-primary;
-    }
-          .text_offer {
-            font-size: 15px;
-            font-weight: 600;
+      .insid2 {
+        @extend .insid;
+        width: 1000px !important;
+        height: 350px !important;
+        overflow: hidden !important;
+
+        padding-top: 0px !important;
+        .groub_one_links,
+        .groub_tow_links {
+          padding-top: 20px !important;
+          padding-left: 5px !important;
+        }
+        &:hover {
+          overflow: hidden;
+        }
+      }
+      .insid3 {
+        @extend .insid2;
+        width: 800px !important;
+      }
+      .page_links{
+      width: 250px;
+        height: 200px;
+        box-shadow: 1px 1px 1px #e3dfdf, -1px -1px 1px #e3dfdf;
+        position: absolute;
+        top: 50px;
+        left: 305px;
+        font-family: $body-font;
+        display: none;
+        .page{
+          height: 100%;
+          width: 100%;
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            height: 100%;position: relative;
+            &:hover>div{
+              display: flex;
+            }
+            .insid_page{
+            width: 200px;
+              height: 100px;
+              position: absolute;
+              right:-92%;
+              top: 0px;
+              color: #000;
+              display: flex;
+              align-items: flex-start;
+              padding: 0px;
+              box-shadow: 1px 1px 1px #e3dfdf, -1px -1px 1px #e3dfdf;
+              display: none;
+            }
+            
+            a{
+              color:#777;
+              text-decoration: none;
+              font-size: 15px;
+              font-weight: 500;
+              width: 100%;
+              height: 100%;
+              padding-top: 10px;
+              position: relative;
+              &:hover{
+                color:$color-primary;
+              }
+              svg{
+                position: absolute;
+                right: 10px;
+                font-size: 10px !important;
+              }
+
+            }
           }
         }
+      }
+      .page_links_blog{
+        @extend .page_links;
+            left: 384px;
+            width: 207px;
+            svg{
+              font-size: 10px !important;
+            }
+            .insid_page{
+             height: auto !important;
+              font-family: $body-font;
+              font-size: 13px;
+              right: -115% !important;
+              padding: 5px!important;
+            }
+      }
+    }
   }
-
+  .offer_text {
+    @extend %flex_center;
+    svg {
+      margin-right: 10px;
+      color: $color-primary;
+    }
+    .text_offer {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
