@@ -1,0 +1,147 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    .right_arrow,.left_arrow{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(236, 234, 234);
+     cursor: pointer;
+        border-radius:50%;
+        top:50%;
+        @extend %flex_center;
+        svg{
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+    .right_arrow{
+        right: 10px;
+    }
+    .left_arrow{
+        left: 10px;
+    }
+          .text_img_slider {
+              width: 100%;
+              height: 100%;
+              @extend %flex_center;
+              flex-direction: column;
+    
+              .text_samll_slider {
+                  color: #ffffff;
+                  text-transform: uppercase;
+                  font-family: $body-font;
+              }
+    
+              .big-text {
+                  width: 30%;
+                  height: 290px;
+                  flex-wrap: wrap;
+                  font-family: "Modak", cursive;
+                  color: #ffffff;
+                  text-transform: uppercase;
+                  font-size: 80px;
+                  display: flex;
+                  padding-left: 20px;
+              }
+    
+              .button_slider {
+                  width: 200px;
+                  padding: 10px;
+                  background-color: $color-primary;
+                  color: #ffffff;
+                  text-transform: uppercase;
+                  @extend %flex_center;
+                  cursor: pointer;
+    
+                  &:hover {
+                      background-color: $hover-color;
+                  }
+    
+                  svg {
+                      font-size: 14px;
+                      margin-left: 20px;
+                  }
+              }
+          }
+    .img_slider_one{
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../images/headerImages/banner_bg_dd59c05d-9c7e-44f6-a706-6792e41dc984.webp");
+            @extend %flex_center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @extend %flex_center;
+            transition: width .4s;
+          
+    }
+    .img_slider_two{
+        @extend .img_slider_one;
+       width: 100%;
+        background-image: url("../../../images/headerImages/2.webp");
+        .big-text{
+            width: 40%;
+        }
+    }
+    .disable{
+        width: 0;
+        overflow: hidden;
+    }
+    .active{
+        width: 100%;
+    }
+}
+// end hero section 
+
+// start serves
+.serves{
+    width: 100%;
+    height: 150px;
+    @extend %flex_center;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       .serves_Way{
+        position: relative;
+        margin-right: 40px;
+      .icon_Serves{
+        position: absolute;
+        top:10px;
+        left: -40px;
+        svg{
+            width: 30px;
+            height: 30px;
+            color:#777;
+        }
+      }
+      .text_Serves{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: start;
+        font-family: $body-font;
+        .Name_serves{
+            font-size: 18px;
+            font-weight: 600;
+            color:#333333;
+            text-transform: capitalize;
+        }
+        .discribt_Serves{
+            font-size: 13px;
+            color:#ddd;
+            text-transform: capitalize;
+        }
+      }
+       }
+
+    }
+}
+// end serves
+

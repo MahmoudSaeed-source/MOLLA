@@ -1,0 +1,54 @@
+// start browes_Sections
+.browes_Sections{
+    width: 100%;
+    height:600px; 
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .sections_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+        .section_one{
+            @extend %flex_center;
+            width: 49%;
+            height: 65%;
+            background-image: url('../../../images/section2/1.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+      
+        }
+        .section_two{
+            @extend .section_one;
+            background-image: url('../../../images/section2/2.webp');
+        }
+        .section_three{
+            @extend .section_one;
+            width: 32% !important;
+            height: 30% !important;
+            background-image: url('../../../images/section2/3.webp');
+        }
+        .section_four{
+            width: 32% !important;
+            height: 30% !important;
+            @extend .section_one;
+            background-image: url('../../../images/section2/4.webp');
+        }
+        .section_five{
+            width: 32% !important;
+            height: 30% !important;
+            @extend .section_one;
+            background-image: url('../../../images/section2/5.webp');
+        }
+
+    }
+}
+// end browes_Sections
