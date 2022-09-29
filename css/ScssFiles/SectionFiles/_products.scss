@@ -1,0 +1,72 @@
+.products{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
+    .container{
+        width:100%;
+        height:100%;
+        .products_title{
+            padding:20px 0px;
+            width:100%;
+            height: 40px;
+            @extend %flex_between;
+            border-bottom: 1px solid rgb(165, 162, 162);
+            .text_products{
+                font-size:22px;
+                font-weight: 600;
+            }
+            .view_more{
+                font-size: 15px;
+                font-weight: 300;
+                color:#000;
+                svg{
+                    font-size: 12px;
+                    color:#333;
+                    font-weight: 200;
+                }
+            }
+        }
+        .products_view{
+            width: 100%;
+            height: auto;
+            display: flex;
+            .product{
+                width: 20%;
+                height:400px;
+                @extend %flex_center-cloumn;
+                font-family: $body-font;
+                position:relative;
+                .over_product{
+                    position:absolute;
+                    width: 100%;
+                    height: 70%;
+                    left: 0;
+                    top:34px;
+                    background-color: #ddd;
+                }
+                .img_product{
+                    width: 100%;
+                    height: 70%;
+                    background-image:url("../../../images/productes/product1/1.webp");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .product_name{
+                    width: 100%;
+                    @extend %flex_center;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-top: 10px;                    
+                }
+                .product_price{
+                    @extend .product_name;
+                    font-size:14px;
+                    margin-top: -5px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

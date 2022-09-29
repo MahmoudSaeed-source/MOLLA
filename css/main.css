@@ -10933,15 +10933,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
+.products .container .products_view .product .product_name, .products .container .products_view .product .product_price, .subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
 nav .header_nave .v_icon_shop .shoping .top-icon, nav .header_nave .v_icon_shop .favorite,
-nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact .country .country_pop .pop li, .subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
+nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact .country .country_pop .pop li, .products .container .products_view .product, .subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-nav .nav_bottom .links_nav_botton, nav .header_nave .v_icon_shop, nav .header_nave, nav .nav_contact .container, nav .nav_contact {
+.products .container .products_title, nav .nav_bottom .links_nav_botton, nav .header_nave .v_icon_shop, nav .header_nave, nav .nav_contact .container, nav .nav_contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10953,7 +10953,7 @@ nav .nav_contact .links_contact .social_icon, nav .nav_contact .links_contact {
   justify-content: end;
 }
 
-.subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
+.products .container .products_view .product, .subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
   flex-direction: column;
 }
 
@@ -11689,4 +11689,72 @@ nav .offer_text .text_offer {
 }
 .subscript .container .subscript_content .email_content button:hover {
   background-color: #c15454;
+}
+
+.products {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+.products .container {
+  width: 100%;
+  height: 100%;
+}
+.products .container .products_title {
+  padding: 20px 0px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid rgb(165, 162, 162);
+}
+.products .container .products_title .text_products {
+  font-size: 22px;
+  font-weight: 600;
+}
+.products .container .products_title .view_more {
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+}
+.products .container .products_title .view_more svg {
+  font-size: 12px;
+  color: #333;
+  font-weight: 200;
+}
+.products .container .products_view {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.products .container .products_view .product {
+  width: 20%;
+  height: 400px;
+  font-family: "Poppins", sans-seri;
+  position: relative;
+}
+.products .container .products_view .product .over_product {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 0;
+  top: 34px;
+  background-color: #ddd;
+}
+.products .container .products_view .product .img_product {
+  width: 100%;
+  height: 70%;
+  background-image: url("../../../images/productes/product1/1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.products .container .products_view .product .product_name, .products .container .products_view .product .product_price {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.products .container .products_view .product .product_price {
+  font-size: 14px;
+  margin-top: -5px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
