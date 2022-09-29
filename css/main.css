@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); /*!
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+/*!
  * Bootstrap  v5.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -10930,9 +10933,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
+.subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
 nav .header_nave .v_icon_shop .shoping .top-icon, nav .header_nave .v_icon_shop .favorite,
-nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact .country .country_pop .pop li {
+nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact .country .country_pop .pop li, .subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10948,6 +10951,10 @@ nav .nav_contact .links_contact .social_icon, nav .nav_contact .links_contact {
   display: flex;
   align-items: center;
   justify-content: end;
+}
+
+.subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
+  flex-direction: column;
 }
 
 * {
@@ -11517,6 +11524,48 @@ nav .offer_text .text_offer {
   flex-wrap: wrap;
   overflow: hidden;
 }
+.browes_Sections .sections_container .section_ditails {
+  font-family: "Poppins", sans-seri;
+  color: #ffffff;
+}
+.browes_Sections .sections_container .section_ditails:hover .shop_Now {
+  display: block;
+}
+.browes_Sections .sections_container .section_ditails .name_Section_link {
+  font-size: 20px;
+  font-weight: 500;
+}
+.browes_Sections .sections_container .section_ditails p {
+  font-size: 14px;
+}
+.browes_Sections .sections_container .section_ditails .shop_Now {
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff;
+  display: none;
+  text-transform: uppercase;
+}
+.browes_Sections .sections_container .section_text {
+  flex-direction: column;
+  padding: 20px;
+}
+.browes_Sections .sections_container .title_content {
+  font-family: "Sedgwick Ave", cursive;
+  color: #ffffff;
+  font-size: 40px;
+}
+.browes_Sections .sections_container .offer_content {
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  margin-top: 20px;
+}
+.browes_Sections .sections_container .offer_content span {
+  position: absolute;
+  font-size: 20px;
+  top: -20px;
+  left: 40%;
+}
 .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two {
   width: 49%;
   height: 65%;
@@ -11524,22 +11573,120 @@ nav .offer_text .text_offer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  flex-direction: column;
+}
+.browes_Sections .sections_container .section_one:hover > div, .browes_Sections .sections_container .section_five:hover > div, .browes_Sections .sections_container .section_four:hover > div, .browes_Sections .sections_container .section_three:hover > div, .browes_Sections .sections_container .section_two:hover > div {
+  border: 3px dashed white;
 }
 .browes_Sections .sections_container .section_two {
   background-image: url("../../../images/section2/2.webp");
+}
+.browes_Sections .sections_container .section_two .title_content {
+  font-family: "Carter One", cursive;
+  font-size: 30px;
+}
+.browes_Sections .sections_container .section_two .offer_content {
+  font-family: "Carter One", cursive;
+  font-size: 50px;
+}
+.browes_Sections .sections_container .section_two h4, .browes_Sections .sections_container .section_two .h4 {
+  font-family: "Sedgwick Ave", cursive;
+  color: #ffffff;
+  font-size: 14px;
 }
 .browes_Sections .sections_container .section_three {
   width: 32% !important;
   height: 30% !important;
   background-image: url("../../../images/section2/3.webp");
 }
+.browes_Sections .sections_container .section_three:hover > div {
+  border: none;
+}
 .browes_Sections .sections_container .section_four {
   width: 32% !important;
   height: 30% !important;
   background-image: url("../../../images/section2/4.webp");
 }
+.browes_Sections .sections_container .section_four:hover > div {
+  border: none;
+}
 .browes_Sections .sections_container .section_five {
   width: 32% !important;
   height: 30% !important;
   background-image: url("../../../images/section2/5.webp");
+}
+.browes_Sections .sections_container .section_five:hover > div {
+  border: none;
+}
+
+.subscript {
+  width: 100%;
+  height: 300px;
+}
+.subscript .container {
+  width: 100%;
+  height: 100%;
+}
+.subscript .container .subscript_content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000000;
+}
+.subscript .container .subscript_content .email_icon {
+  width: 100%;
+  height: 20%;
+}
+.subscript .container .subscript_content .email_icon svg {
+  width: 40px;
+  height: 40px;
+  color: #000000;
+}
+.subscript .container .subscript_content .subscript_title {
+  width: 100%;
+  color: #000000;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  font-family: "Poppins", sans-seri;
+  margin-top: 20px;
+}
+.subscript .container .subscript_content .subscript_p {
+  color: #777;
+  font-size: 14px;
+}
+.subscript .container .subscript_content .email_content {
+  width: 100%;
+}
+.subscript .container .subscript_content .email_content input {
+  width: 450px;
+  height: 46px;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.subscript .container .subscript_content .email_content input::-moz-placeholder {
+  font-size: 16x;
+}
+.subscript .container .subscript_content .email_content input:-ms-input-placeholder {
+  font-size: 16x;
+}
+.subscript .container .subscript_content .email_content input::placeholder {
+  font-size: 16x;
+}
+.subscript .container .subscript_content .email_content button {
+  width: 180px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #cc9966;
+  border: none;
+  outline: none;
+}
+.subscript .container .subscript_content .email_content button svg {
+  margin-left: 15px;
+  font-size: 13px;
+}
+.subscript .container .subscript_content .email_content button:hover {
+  background-color: #c15454;
 }/*# sourceMappingURL=main.css.map */
