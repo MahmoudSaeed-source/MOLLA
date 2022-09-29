@@ -64,7 +64,7 @@
             @extend %flex_center;
             width: 49%;
             height: 65%;
-            background-image: url("../../../images/section2/1.webp");
+            background-image: url("../././images/section2/1.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -75,7 +75,7 @@
         }
         .section_two {
             @extend .section_one;
-            background-image: url("../../../images/section2/2.webp");
+            background-image: url("../././images/section2/2.webp");
             .title_content {
                 font-family: $font-four;
                 font-size: 30px;
@@ -94,7 +94,7 @@
             @extend .section_one;
             width: 32% !important;
             height: 30% !important;
-            background-image: url("../../../images/section2/3.webp");
+            background-image: url("../././images/section2/3.webp");
             &:hover>div{
                 border: none;
             }
@@ -103,7 +103,7 @@
             width: 32% !important;
             height: 30% !important;
             @extend .section_one;
-            background-image: url("../../../images/section2/4.webp");
+            background-image: url("../././images/section2/4.webp");
             &:hover>div {
                     border: none;
                 }
@@ -112,7 +112,7 @@
             width: 32% !important;
             height: 30% !important;
             @extend .section_one;
-            background-image: url("../../../images/section2/5.webp");
+            background-image: url("../././images/section2/5.webp");
             &:hover>div {
                     border: none;
                 }

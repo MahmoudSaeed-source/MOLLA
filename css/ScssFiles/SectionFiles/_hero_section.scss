@@ -70,7 +70,7 @@
     .img_slider_one{
         width: 100%;
         height: 100%;
-        background-image: url("../../../images/headerImages/banner_bg_dd59c05d-9c7e-44f6-a706-6792e41dc984.webp");
+        background-image: url("../././images/headerImages/banner_bg_dd59c05d-9c7e-44f6-a706-6792e41dc984.webp");
             @extend %flex_center;
             background-position: center;
             background-repeat: no-repeat;
@@ -82,7 +82,7 @@
     .img_slider_two{
         @extend .img_slider_one;
        width: 100%;
-        background-image: url("../../../images/headerImages/2.webp");
+        background-image: url("../././images/headerImages/2.webp");
         .big-text{
             width: 40%;
         }
