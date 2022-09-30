@@ -9,6 +9,9 @@
         "src":[
             {
                 "src1":".././images/productes/product1/1.webp"
+            },
+            {
+                "src2":".././images/productes/product1/1.webp"
             }
         ]
     },
@@ -47,6 +50,11 @@
             },
             {
                 "src2":".././images/productes/product3/2.webp"
+            },
+            {
+                "src3":".././images/productes/product3/2.webp"
+            },{
+                "src4":".././images/productes/product3/2.webp"
             }
         ]
     },
@@ -87,10 +95,10 @@
                 "src2":".././images/productes/product5/2.jpg"
             },
             {
-                "src2":".././images/productes/product5/3.webp"
+                "src3":".././images/productes/product5/3.webp"
             },
             {
-                "src2":".././images/productes/product5/4.webp"
+                "src4":".././images/productes/product5/4.webp"
             }
         ]
     },

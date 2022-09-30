@@ -11825,6 +11825,10 @@ nav .offer_text .text_offer {
 .products .container .products_view .product .img_product img {
   width: 100%;
   height: 100%;
+  transition: transform 0.8s;
+}
+.products .container .products_view .product .img_product img:hover {
+  transform: scale(1.1);
 }
 .products .container .products_view .product .product_name, .products .container .products_view .product .product_price {
   width: 100%;

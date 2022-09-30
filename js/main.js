@@ -56,7 +56,7 @@ async function getData() {
 }
 getData().then(data => {
     data.forEach(product => {
-        result +=`<div class="product col-lg-2">
+        result += `<div class="product col-lg-2">
         <div class="over_product">
           <span class="heart"><i class="fa-regular fa-heart"></i></span>
           <span class="view"><i class="fa-solid fa-binoculars"></i></span>
@@ -65,14 +65,12 @@ getData().then(data => {
           </div>
         </div>
         <div class="img_product">
-        <img data-id = ${product.id} class = "imag_pro" src = "${product.src[0].src1}">
-        </div>
-        <div class="img_product ">
-        <img data-id = ${product.id} class = "imag_pro" src = "${product.src[0].src1}">
+        <img data-id = ${product.id}  class = "imag_pro" src = "${product.src[0].src1}">
         </div>
         <h4 class="product_name">${product.name}</h4>
         <h5 class="product_price"><span class="price_sale"><del>${product.pricesale}</del></span>${product.price}</h5>  
-      </div>`           
+      </div>`
+    })  
     products_view.innerHTML += result;
 })
 
@@ -80,12 +78,11 @@ getData().then(data => {
         getData().then(data => {
             data.forEach(pro => {
                 if(e.target.dataset.id == pro.id) {
-                    console.log(pro)
+                    e.target.src = pro.src[1].src2;
                 }
             })
-           
         })
     })
-})
 
-// end fetch data form json file
+
+// // end fetch data form json file
