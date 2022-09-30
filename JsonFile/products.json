@@ -65,10 +65,10 @@
                 "src2":".././images/productes/product4/2.jpg"
             },
             {
-                "src2":".././images/productes/product4/3.webp"
+                "src3":".././images/productes/product4/3.webp"
             },
             {
-                "src2":".././images/productes/product4/4.webp"
+                "src4":".././images/productes/product4/4.webp"
             }
         ]
     },
@@ -109,10 +109,10 @@
                 "src2":".././images/productes/product6/2.jpg"
             },
             {
-                "src2":".././images/productes/product6/3.webp"
+                "sr3":".././images/productes/product6/3.webp"
             },
             {
-                "src2":".././images/productes/product6/4.webp"
+                "src4":".././images/productes/product6/4.webp"
             }
         ]
     },
@@ -131,10 +131,10 @@
                 "src2":".././images/productes/product7/1.webp"
             },
             {
-                "src2":".././images/productes/product6/3.webp"
+                "src3":".././images/productes/product6/3.webp"
             },
             {
-                "src2":".././images/productes/product6/4.webp"
+                "src4":".././images/productes/product6/4.webp"
             }
         ]
     },
@@ -153,10 +153,10 @@
                 "src2":".././images/productes/product8/2.jpg"
             },
             {
-                "src2":".././images/productes/product6/3.webp"
+                "src3":".././images/productes/product6/3.webp"
             },
             {
-                "src2":".././images/productes/product6/4.webp"
+                "src4":".././images/productes/product6/4.webp"
             }
         ]
     },
@@ -175,10 +175,10 @@
                 "src2":".././images/productes/product9/2.webp"
             },
             {
-                "src2":".././images/productes/product9/1.webp"
+                "src3":".././images/productes/product9/1.webp"
             },
             {
-                "src2":".././images/productes/product9/4.webp"
+                "src4":".././images/productes/product9/4.webp"
             }
         ]
     },
@@ -197,10 +197,10 @@
                 "src2":".././images/productes/product10/1.webp"
             },
             {
-                "src2":".././images/productes/product10/2.webp"
+                "src3":".././images/productes/product10/2.webp"
             },
             {
-                "src2":".././images/productes/product10/4.webp"
+                "src4":".././images/productes/product10/4.webp"
             }
         ]
     }

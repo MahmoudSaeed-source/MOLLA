@@ -65,16 +65,27 @@ getData().then(data => {
           </div>
         </div>
         <div class="img_product">
-        <img class = "imag_pro" src = "${product.src[0].src1}">
+        <img data-id = ${product.id} class = "imag_pro" src = "${product.src[0].src1}">
+        </div>
+        <div class="img_product ">
+        <img data-id = ${product.id} class = "imag_pro" src = "${product.src[0].src1}">
         </div>
         <h4 class="product_name">${product.name}</h4>
         <h5 class="product_price"><span class="price_sale"><del>${product.pricesale}</del></span>${product.price}</h5>  
-      </div>`        
-    })
-    
-   
+      </div>`           
     products_view.innerHTML += result;
-    
-    
 })
+
+    document.body.addEventListener("mouseover",(e) => {
+        getData().then(data => {
+            data.forEach(pro => {
+                if(e.target.dataset.id == pro.id) {
+                    console.log(pro)
+                }
+            })
+           
+        })
+    })
+})
+
 // end fetch data form json file

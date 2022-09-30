@@ -11762,7 +11762,7 @@ nav .offer_text .text_offer {
   z-index: 100;
 }
 .products .container .products_view .product .over_product .heart:hover, .products .container .products_view .product .over_product .view:hover {
-  background-color: #EF837B;
+  background-color: #ef837b;
 }
 .products .container .products_view .product .over_product .heart:hover svg, .products .container .products_view .product .over_product .view:hover svg {
   color: #fff;
@@ -11776,7 +11776,7 @@ nav .offer_text .text_offer {
   height: 25px;
   border-radius: 15px;
   color: #fff;
-  background-color: #EF837B;
+  background-color: #ef837b;
   font-size: 10px;
   display: flex;
   align-items: center;
