@@ -39,7 +39,42 @@ function chang_Images_Hero_right() {
         img_slider_two.classList.remove("active");
         img_slider_one.classList.remove("disable");
         img_slider_on.classList.add("active")
-       
     })
 }
 // end chang hero section images
+
+
+// start fetch data form json file
+let Url = '../JsonFile/products.json';
+let products_view = document.querySelector(".products_view");
+let image_pro = [];
+let result = [];
+async function getData() {
+    let res = await fetch(Url);
+    let Data = await res.json();
+    return Data
+}
+getData().then(data => {
+    data.forEach(product => {
+        result +=`<div class="product col-lg-2">
+        <div class="over_product">
+          <span class="heart"><i class="fa-regular fa-heart"></i></span>
+          <span class="view"><i class="fa-solid fa-binoculars"></i></span>
+          <div class="add_To_Cart">
+            <span><i class="fa-solid fa-cart-plus"></i>ADD TO CART</span>
+          </div>
+        </div>
+        <div class="img_product">
+        <img class = "imag_pro" src = "${product.src[0].src1}">
+        </div>
+        <h4 class="product_name">${product.name}</h4>
+        <h5 class="product_price"><span class="price_sale"><del>${product.pricesale}</del></span>${product.price}</h5>  
+      </div>`        
+    })
+    
+   
+    products_view.innerHTML += result;
+    
+    
+})
+// end fetch data form json file

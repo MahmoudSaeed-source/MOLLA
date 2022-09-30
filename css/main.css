@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.products .container .products_view .product .product_name, .products .container .products_view .product .product_price, .subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
+.products .container .products_view .product .product_name, .products .container .products_view .product .product_price, .products .container .products_view .product .over_product .add_To_Cart, .subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
 nav .header_nave .v_icon_shop .shoping .top-icon, nav .header_nave .v_icon_shop .favorite,
 nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact .country .country_pop .pop li, .products .container .products_view .product, .subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
   display: flex;
@@ -11724,12 +11724,18 @@ nav .offer_text .text_offer {
   width: 100%;
   height: auto;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .products .container .products_view .product {
-  width: 20%;
+  width: 18%;
   height: 400px;
   font-family: "Poppins", sans-seri;
   position: relative;
+}
+.products .container .products_view .product:hover .over_product {
+  display: flex;
 }
 .products .container .products_view .product .over_product {
   position: absolute;
@@ -11737,15 +11743,88 @@ nav .offer_text .text_offer {
   height: 70%;
   left: 0;
   top: 34px;
-  background-color: #ddd;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.products .container .products_view .product .over_product .heart, .products .container .products_view .product .over_product .view {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.products .container .products_view .product .over_product .heart:hover, .products .container .products_view .product .over_product .view:hover {
+  background-color: #EF837B;
+}
+.products .container .products_view .product .over_product .heart:hover svg, .products .container .products_view .product .over_product .view:hover svg {
+  color: #fff;
+}
+.products .container .products_view .product .over_product .heart:hover::after, .products .container .products_view .product .over_product .view:hover::after {
+  content: "View my Wishlist ";
+  position: absolute;
+  top: 0;
+  right: 1px;
+  width: 130px;
+  height: 25px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #EF837B;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  z-index: -1;
+  padding: 0px 18px;
+}
+.products .container .products_view .product .over_product .heart svg, .products .container .products_view .product .over_product .view svg {
+  color: #000;
+  font-size: 14px;
+}
+.products .container .products_view .product .over_product .view {
+  top: 50px;
+}
+.products .container .products_view .product .over_product .view:hover::after {
+  content: "Quick view ";
+  width: 100px;
+}
+.products .container .products_view .product .over_product .add_To_Cart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+}
+.products .container .products_view .product .over_product .add_To_Cart span {
+  font-size: 13px;
+}
+.products .container .products_view .product .over_product .add_To_Cart:hover {
+  color: #cc9966;
+}
+.products .container .products_view .product .over_product .add_To_Cart:hover svg {
+  display: inline-block;
+}
+.products .container .products_view .product .over_product .add_To_Cart svg {
+  margin-right: 10px;
+  display: none;
 }
 .products .container .products_view .product .img_product {
   width: 100%;
   height: 70%;
-  background-image: url("../../../images/productes/product1/1.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+}
+.products .container .products_view .product .img_product img {
+  width: 100%;
+  height: 100%;
 }
 .products .container .products_view .product .product_name, .products .container .products_view .product .product_price {
   width: 100%;
@@ -11757,4 +11836,11 @@ nav .offer_text .text_offer {
   font-size: 14px;
   margin-top: -5px;
   font-weight: 500;
+  color: #f00;
+}
+.products .container .products_view .product .product_price .price_sale {
+  color: #888;
+  margin-right: 10px;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }/*# sourceMappingURL=main.css.map */

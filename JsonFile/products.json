@@ -3,7 +3,8 @@
         "id":"1",
         "modle":"Long FitT Shirt",
         "name":"Long Fit T-Shirt",
-        "price":"€6.99 €9.99",
+        "price":"€8.99",
+        "pricesale":" 15.00",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
@@ -15,7 +16,8 @@
         "id":"2",
         "modle":"Premium Cotton T-Shirt",
         "name":"Premium Cotton T-Shirt",
-        "price":"€6.99 €9.99",
+        "price":" €9.99",
+        "pricesale":"€6.99 ",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
@@ -36,7 +38,8 @@
         "id":"3",
         "modle":"Striped Shirt",
         "name":"Striped Shirt",
-        "price":"€6.99 €9.99",
+        "price":" €13.50",
+        "pricesale":"€16.99",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
@@ -51,7 +54,8 @@
         "id":"4",
         "modle":"Cotton T-Shirt",
         "name":"Cotton T-Shirt",
-        "price":"€6.99 €9.99",
+        "price":" €13.00",
+        "pricesale":"€9.00 ",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
@@ -73,6 +77,7 @@
         "modle":"Long Hooded T-Shirt",
         "name":"Long Hooded T-Shirt",
         "price":"€17.99",
+         "pricesale":"",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
@@ -93,7 +98,8 @@
         "id":"6",
         "modle":"Printed Cotton Shirt",
         "name":"Printed Cotton Shirt",
-        "price":"€12.99 €17.99",
+        "price":"€17.99",
+        "pricesale":"€12.99 ",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
@@ -112,16 +118,17 @@
     },
     {
         "id":"7",
-        "modle":"Printed Cotton Shirt",
-        "name":"Printed Cotton Shirt",
-        "price":"€12.99 €17.99",
+        "modle":"Oversized Printed T-Shirt",
+        "name":"Oversized Printed T-Shirt",
+        "price":"$28.00",
+         "pricesale":" ",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
-                "src1":".././images/productes/product6/1.webp"
+                "src1":".././images/productes/product7/2.jpg"
             },
             {
-                "src2":".././images/productes/product6/2.jpg"
+                "src2":".././images/productes/product7/1.webp"
             },
             {
                 "src2":".././images/productes/product6/3.webp"
@@ -133,16 +140,17 @@
     },
     {
         "id":"8",
-        "modle":"Printed Cotton Shirt",
-        "name":"Printed Cotton Shirt",
-        "price":"€12.99 €17.99",
+        "modle":"Wool Jersey T-Shirt",
+        "name":"Wool Jersey T-Shirt",
+        "price":"$20.00",
+         "pricesale":" ",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
-                "src1":".././images/productes/product6/1.webp"
+                "src1":".././images/productes/product8/1.webp"
             },
             {
-                "src2":".././images/productes/product6/2.jpg"
+                "src2":".././images/productes/product8/2.jpg"
             },
             {
                 "src2":".././images/productes/product6/3.webp"
@@ -154,43 +162,45 @@
     },
     {
         "id":"9",
-        "modle":"Printed Cotton Shirt",
-        "name":"Printed Cotton Shirt",
-        "price":"€12.99 €17.99",
+        "modle":"Slub Jersey Henley Shirt",
+        "name":"Slub Jersey Henley Shirt",
+        "price":"$23.00",
+         "pricesale":"",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
-                "src1":".././images/productes/product6/1.webp"
+                "src1":".././images/productes/product9/3.jpg"
             },
             {
-                "src2":".././images/productes/product6/2.jpg"
+                "src2":".././images/productes/product9/2.webp"
             },
             {
-                "src2":".././images/productes/product6/3.webp"
+                "src2":".././images/productes/product9/1.webp"
             },
             {
-                "src2":".././images/productes/product6/4.webp"
+                "src2":".././images/productes/product9/4.webp"
             }
         ]
     },
     {
         "id":"10",
-        "modle":"Printed Cotton Shirt",
-        "name":"Printed Cotton Shirt",
-        "price":"€12.99 €17.99",
+        "modle":"Raw-Edge T-Shirt",
+        "name":"Raw-Edge T-Shirt",
+        "price":"$20.00",
+         "pricesale":" ",
         "discrption":"Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
         "src":[
             {
-                "src1":".././images/productes/product6/1.webp"
+                "src1":".././images/productes/product10/3.webp"
             },
             {
-                "src2":".././images/productes/product6/2.jpg"
+                "src2":".././images/productes/product10/1.webp"
             },
             {
-                "src2":".././images/productes/product6/3.webp"
+                "src2":".././images/productes/product10/2.webp"
             },
             {
-                "src2":".././images/productes/product6/4.webp"
+                "src2":".././images/productes/product10/4.webp"
             }
         ]
     }
