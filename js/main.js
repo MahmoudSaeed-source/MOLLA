@@ -81,10 +81,11 @@ getData().then(data => {
         ${
             (() => {
             if(product.hasOwnProperty("color")) {
-                let colors = [];
+             
+                
                 for(const [key,value] of Object.entries(product.color)) {
                 
-                    return colors+=`<span class= "color" style='background-color:${value}'></span>`
+                    return `<span class= "color" style='background-color:${value}'></span>`
                }  
             } else {
                 return "";

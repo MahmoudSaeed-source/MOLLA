@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.products .container .products_view .product .product_name, .products .container .products_view .product .product_price, .products .container .products_view .product .over_product .add_To_Cart, .subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
+.Reviews .reviews_content .member_review, .products .view_more_products, .products .container .products_view .product .product_name, .products .container .products_view .product .product_price, .products .container .products_view .product .over_product .add_To_Cart, .subscript .container .subscript_content .email_content, .subscript .container .subscript_content .subscript_p, .subscript .container .subscript_content .subscript_title, .subscript .container .subscript_content .email_icon, .browes_Sections .sections_container .section_one, .browes_Sections .sections_container .section_five, .browes_Sections .sections_container .section_four, .browes_Sections .sections_container .section_three, .browes_Sections .sections_container .section_two, .browes_Sections .sections_container .section_text, .serves, .header .img_slider_one, .header .img_slider_two, .header .text_img_slider .button_slider, .header .text_img_slider, .header .right_arrow, .header .left_arrow, nav .offer_text, nav .nav_bottom, nav .header_nave .v_icon_shop .favorite .top-icon,
 nav .header_nave .v_icon_shop .shoping .top-icon, nav .header_nave .v_icon_shop .favorite,
 nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact .country .country_pop .pop li, .products .container .products_view .product, .subscript .container .subscript_content, .browes_Sections .sections_container .section_ditails {
   display: flex;
@@ -10941,7 +10941,7 @@ nav .header_nave .v_icon_shop .shoping, nav .header_nave .logo, nav .nav_contact
   justify-content: center;
 }
 
-.products .container .products_title, nav .nav_bottom .links_nav_botton, nav .header_nave .v_icon_shop, nav .header_nave, nav .nav_contact .container, nav .nav_contact {
+.Reviews .reviews_content, .Reviews .container .reviews_title, .products .container .products_title, nav .nav_bottom .links_nav_botton, nav .header_nave .v_icon_shop, nav .header_nave, nav .nav_contact .container, nav .nav_contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11871,4 +11871,97 @@ nav .offer_text .text_offer {
   margin-right: 10px;
   -webkit-text-decoration: dashed;
           text-decoration: dashed;
+}
+.products .view_more_products {
+  width: 100%;
+  height: 100px;
+}
+.products .view_more_products .go_to_products {
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #cc9966;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+.products .view_more_products .go_to_products:hover {
+  background-color: #c15454;
+  color: white;
+}
+
+.Reviews {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+}
+.Reviews .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Reviews .container .reviews_title {
+  width: 100%;
+  height: 40x;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  font-family: "Poppins", sans-seri;
+  padding: 20px 0px;
+  font-weight: 600;
+}
+.Reviews .container .reviews_title svg {
+  font-size: 24px;
+  font-weight: 200;
+  margin-right: 20px;
+  color: #333;
+}
+.Reviews .reviews_content {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.Reviews .reviews_content .member_review {
+  width: 33%;
+  flex-direction: row;
+  padding: 20px 0px;
+  overflow: hidden;
+}
+.Reviews .reviews_content .member_review .image_Member {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.Reviews .reviews_content .member_review .image_Member img {
+  width: 85px;
+  height: 85px;
+}
+.Reviews .reviews_content .member_review .data_Member {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.Reviews .reviews_content .member_review .data_Member .starts {
+  height: 30px;
+}
+.Reviews .reviews_content .member_review .data_Member .starts svg {
+  color: #cc9966;
+  font-size: 13px;
+  margin-right: 2px;
+}
+.Reviews .reviews_content .member_review .data_Member .member_header {
+  font-size: 16px !important;
+  font-weight: 600;
+  font-family: "Poppins", sans-seri;
+  color: #333;
+}
+.Reviews .reviews_content .member_review .data_Member p {
+  font-size: 13px;
+  color: #666;
+  height: 78px;
+}
+.Reviews .reviews_content .member_review .data_Member cite {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

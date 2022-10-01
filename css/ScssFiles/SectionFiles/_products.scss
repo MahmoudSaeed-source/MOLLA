@@ -183,4 +183,25 @@
       }
     }
   }
+  .view_more_products{
+    width:100%;
+    height: 100px;
+    @extend %flex_center;
+    
+    .go_to_products{
+      width: 200px;
+      height: 40px;
+      font-size: 14px;
+      padding: 10px;
+      background-color: $color-primary;
+      color:#fff;
+      text-transform: uppercase;
+      border: none;
+      outline: none;
+      &:hover{
+        background-color: $hover-color;
+        color:#ffff;
+      }
+    }
+  }
 }
