@@ -66,9 +66,31 @@ getData().then(data => {
         </div>
         <div class="img_product">
         <img data-id = ${product.id}  class = "imag_pro" src = "${product.src[0].src1}">
+         ${
+            (() => {
+                if(product.hasOwnProperty("save")) {
+                        return  `<span class= "save" >${product.save}</span>`
+                } else {
+                    return "";
+                }
+            })()
+        }
         </div>
         <h4 class="product_name">${product.name}</h4>
         <h5 class="product_price"><span class="price_sale"><del>${product.pricesale}</del></span>${product.price}</h5>  
+        ${
+            (() => {
+            if(product.hasOwnProperty("color")) {
+                let colors = [];
+                for(const [key,value] of Object.entries(product.color)) {
+                
+                    return colors+=`<span class= "color" style='background-color:${value}'></span>`
+               }  
+            } else {
+                return "";
+                }
+            })()
+        }
       </div>`
     })  
     products_view.innerHTML += result;
@@ -79,10 +101,17 @@ getData().then(data => {
             data.forEach(pro => {
                 if(e.target.dataset.id == pro.id) {
                     e.target.src = pro.src[1].src2;
+                    e.target.addEventListener("mouseout",() => {
+                        e.target.src = pro.src[0].src1;
+                    })
                 }
             })
         })
+        
     })
+let over_product = document.querySelectorAll(".over_product");
+console.log(over_product)
+
 
 
 // // end fetch data form json file
