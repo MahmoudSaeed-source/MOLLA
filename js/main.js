@@ -110,9 +110,22 @@ getData().then(data => {
         })
         
     })
-let over_product = document.querySelectorAll(".over_product");
-console.log(over_product)
+
 
 
 
 // // end fetch data form json file
+
+//start reviews section
+let icon_Left_Side = document.querySelector(".icon_left_side");
+let icon_Right_Side = document.querySelector(".icon_right_side");
+let member_One = document.querySelector(".member_one")
+icon_Right_Side.addEventListener("click",() => {
+    member_One.classList.add("disable")
+    
+})
+icon_Left_Side.addEventListener("click",() => {
+    member_One.classList.remove("disable")
+    
+})
+// end reviews section

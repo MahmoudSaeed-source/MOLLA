@@ -11917,16 +11917,21 @@ nav .offer_text .text_offer {
   font-weight: 200;
   margin-right: 20px;
   color: #333;
+  cursor: pointer;
 }
 .Reviews .reviews_content {
   margin-top: 30px;
   overflow: hidden;
 }
 .Reviews .reviews_content .member_review {
-  width: 33%;
+  width: 34%;
   flex-direction: row;
   padding: 20px 0px;
   overflow: hidden;
+}
+.Reviews .reviews_content .member_review.disable {
+  width: 0;
+  display: none;
 }
 .Reviews .reviews_content .member_review .image_Member {
   display: flex;
