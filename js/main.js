@@ -6,7 +6,20 @@ let left_Arrow = document.querySelector(".left_arrow");
 let right_Arrow = document.querySelector(".right_arrow"); 
 let img_slider_one = document.querySelector(".img_slider_one");
 let img_slider_two = document.querySelector(".img_slider_two");
+let navBar_Section = document.querySelector(".nav_bar_section");
 // end variables
+
+
+// start navbar fixed
+window.onscroll = () => {
+    if(window.scrollY > 150) {
+        navBar_Section.classList.add("fixed")
+    } else {
+        navBar_Section.classList.remove("fixed")
+   }
+}
+
+// end navbar fixed
 
 // start chooes country form pop
 chooes_country()

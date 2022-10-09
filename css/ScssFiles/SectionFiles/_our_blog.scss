@@ -1,0 +1,74 @@
+.Our_Blog{
+    margin-top:60px;
+    width:100%;
+    height:300px;
+    .container{
+    display: flex;
+    flex-direction: column;
+    .products_title {
+            padding: 20px 0px;
+            width: 100%;
+            height: 40px;
+            @extend %flex_between;
+            border-bottom: 1px solid rgb(165, 162, 162);
+    
+            .text_products {
+                font-size: 22px;
+                font-weight: 600;
+            }
+    
+            .view_more {
+                font-size: 15px;
+                font-weight: 300;
+                color: #000;
+                cursor: pointer;
+    
+                &:hover {
+                    color: $color-primary;
+    
+                    svg {
+                        color: $color-primary;
+                    }
+                }
+    
+                svg {
+                    font-size: 12px;
+                    color: #333;
+                    font-weight: 200;
+                }
+            }
+        }
+        .blog_container{
+            width: 100%;
+            @extend %flex_between;
+            .blog_content{
+                padding: 30px 5px;
+                margin-right: 10px;
+                cursor: pointer;
+                .image_blog{
+                    height: 150px;
+                    img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                }
+                .Date{
+                    margin-top: 20px;
+                    font-size:13px;
+                    color:rgb(146, 141, 141);
+                }
+                .Name_blog{
+                    font-size: 17px;
+                    font-family: $body-font;
+                    color:#333;
+                }
+                p{
+                    font-family:$body-font;
+                    font-size:16px;
+                    color:rgb(146, 141, 141);
+                }
+                
+            }
+        }
+    }
+}
