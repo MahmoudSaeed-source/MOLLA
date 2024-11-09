@@ -10825,6 +10825,34 @@ nav .nav_contact {
 nav .nav_contact .container {
   width: 100%;
 }
+nav .nav_contact .links-menu-mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  nav .nav_contact .links-menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    border: 1px solid red;
+    text-align: center;
+    position: absolute;
+    too: 35px;
+    right: 30%;
+  }
+  nav .nav_contact .links-menu-mobile h4, nav .nav_contact .links-menu-mobile .h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+  nav .nav_contact .links-menu-mobile h4 .open_Menu_mobile, nav .nav_contact .links-menu-mobile .h4 .open_Menu_mobile {
+    margin-left: 10px;
+    border: 1px solid red;
+    cursor: pointer;
+  }
+}
 nav .nav_contact .phon {
   cursor: pointer;
 }
@@ -10846,6 +10874,34 @@ nav .nav_contact .links_contact .social_icon svg {
   cursor: pointer;
 }
 nav .nav_contact .links_contact .social_icon svg:hover {
+  color: #cc9966;
+}
+nav .nav_contact .links_contact .social_icon .open_social_menu {
+  display: flex;
+  flex-direction: column;
+  width: 69px;
+  background-color: #000;
+  top: 29px;
+  position: absolute;
+  right: 30%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000000;
+}
+nav .nav_contact .links_contact .social_icon .open_social_menu span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid rgb(87, 86, 86);
+}
+nav .nav_contact .links_contact .social_icon .open_social_menu span svg {
+  margin-right: 0px !important;
+  cursor: pointer;
+}
+nav .nav_contact .links_contact .social_icon .open_social_menu span svg:hover {
   color: #cc9966;
 }
 nav .nav_contact .country {
