@@ -10821,9 +10821,7 @@ nav .nav_contact {
   background-color: #000;
   color: rgb(177, 174, 174);
   font-size: 14px;
-}
-nav .nav_contact .container {
-  width: 100%;
+  position: relative;
 }
 nav .nav_contact .links-menu-mobile {
   display: none;
@@ -10834,9 +10832,9 @@ nav .nav_contact .links-menu-mobile {
     justify-content: center;
     align-items: center;
     width: auto;
+    height: 100%;
     text-align: center;
     position: absolute;
-    too: 35px;
     right: 30%;
   }
   nav .nav_contact .links-menu-mobile h4, nav .nav_contact .links-menu-mobile .h4 {
@@ -10844,6 +10842,13 @@ nav .nav_contact .links-menu-mobile {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   nav .nav_contact .links-menu-mobile h4 .open_Menu_mobile, nav .nav_contact .links-menu-mobile .h4 .open_Menu_mobile {
     margin-left: 10px;
@@ -10858,13 +10863,6 @@ nav .nav_contact .phon:hover {
 }
 nav .nav_contact .phon svg {
   margin-right: 10px;
-}
-nav .nav_contact .links_contact .login svg {
-  margin-right: 10px;
-  cursor: pointer;
-}
-nav .nav_contact .links_contact .login svg:hover {
-  color: #cc9966;
 }
 nav .nav_contact .links_contact .social_icon svg {
   margin-right: 30px;
