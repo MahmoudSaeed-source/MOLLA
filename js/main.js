@@ -20,7 +20,14 @@ window.onscroll = () => {
 }
 
 // end navbar fixed
-
+// start open-menu-mobile
+const open_Btn = document.querySelector(".open_Menu_mobile");
+const Social_Icon = document.querySelector(".social_icon");
+function open_menu() {
+    Social_Icon.classList.toggle("open_social_menu");
+    console.log("open ")
+}
+// end open-menu-mobile
 // start chooes country form pop
 chooes_country()
 function chooes_country() {

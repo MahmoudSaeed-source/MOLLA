@@ -22,32 +22,33 @@ nav {
     .container {
       width: 100%;
       @extend %flex_between;
+      @include break_points(mobil){
+        max-width: 100% !important;
+        max-width: 100%;
+          margin: 0;
+      }
     }
 
     .links-menu-mobile {
       display: none;
-
       @include break_point(mobil) {
         display: flex;
         justify-content: center;
         align-items: center;
         width: auto;
-        height: 100%;
-        border: 1px solid red;
+       
         text-align: center;
         position: absolute;
         too: 35px;
         right: 30%;
-
         h4 {
           font-size: 14px;
           text-transform: uppercase;
           color: #fff;
           text-align: center;
-
           .open_Menu_mobile {
             margin-left: 10px;
-            border: 1px solid red;
+            
             cursor: pointer;
           }
         }
@@ -71,19 +72,24 @@ nav {
       @extend %flex_end;
 
       .login {
+        border: 2px solid red;
+        width: 100px ;
         svg {
           margin-right: 10px;
           cursor: pointer;
-
+          
           &:hover {
             color: $color-primary;
           }
         }
+        @include break_point(mobil){
+          width: 200px !important;
+          border: 1px solid red
+                }
       }
 
       .social_icon {
         @extend %flex_end;
-
         svg {
           margin-right: 30px;
           cursor: pointer;
@@ -92,43 +98,46 @@ nav {
             color: $color-primary;
           }
         }
-        .open_social_menu{
-              display: flex;
-              flex-direction: column;
-              width: 69px;
-              background-color: #000;
-              top: 29px;
-              position: absolute;
-              right: 30%;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
-              z-index: 1000000;
-          
-              span {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 30px;
-                border-bottom: 1px solid rgb(87, 86, 86);
-          
-                svg {
-                  margin-right: 0px !important;
-                  cursor: pointer;
-          
-                  &:hover {
-                    color: $color-primary;
-                  }
-                }
-          
-              }
-            
-
+        @include break_point(mobil){
+          display: none;
         }
+        
         }
       }
+.open_social_menu {
+  display: flex !important;
+  flex-direction: column;
+  width: 69px;
+  background-color: #000;
+  top: 29px;
+  position: absolute;
+  right: 30%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000000;
 
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgb(87, 86, 86);
+
+    svg {
+      margin-right: 0px !important;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+  }
+
+
+}
       .country {
         position: relative;
         cursor: pointer;
